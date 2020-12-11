@@ -12,13 +12,7 @@
           size="52"
         ></v-avatar>
 
-        <v-btn
-          v-for="link in links"
-          :key="link"
-          text
-        >
-          {{ link }}
-        </v-btn>
+<v-toolbar-title>COE. Management</v-toolbar-title>
 
         <v-spacer></v-spacer>
 
@@ -53,7 +47,7 @@
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item
-                  link
+                  @click="$router.push('manage')"
                 >
                   <v-list-item-content>
                     <v-list-item-title>
@@ -82,7 +76,7 @@
 
           <v-col>
             <v-sheet
-              min-height="70vh"
+              min-height="80vh"
               rounded="lg"
             >
             <div style="text-align:center;">
