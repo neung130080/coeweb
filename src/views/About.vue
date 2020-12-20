@@ -68,17 +68,29 @@
               min-height="70vh"
               rounded="lg"
             >
-            <div style="text-align:center;">
-              <br />
-      <h2>COE. Student Employment</h2>
-      <h2>Management System</h2>
-      <br />
-      <p>
-        สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์
-        <br />มหาวัทยาลัยราชภัฏมหาสารคาม
-        <br />
-      </p>
-    </div>
+            <v-col cols="3" sm="2" md="2">
+                <v-text-field
+                  label="COE# ?"
+                  required
+                />
+              </v-col>
+              
+              <v-col cols="25">
+                <v-row>
+               <v-col cols="4" sm="4" md="3">
+                <v-text-field
+                  label="ชื่อ / Name"
+                  required
+                />
+              </v-col>
+               <v-col cols="4" sm="4" md="3">
+                <v-text-field
+                  label="นามสกุล / Lastname"
+                  required
+                />
+              </v-col>
+              </v-row>
+              </v-col>
             </v-sheet>
           </v-col>
         </v-row>

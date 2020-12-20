@@ -70,7 +70,7 @@
             >
             <v-card>
     <v-card-title>
-      Nutrition
+      Management Data
       <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
@@ -103,33 +103,30 @@
         search: '',
         headers: [
           {
-            text: 'Dessert (100g serving)',
+            text: 'Company',
             align: 'start',
             sortable: false,
             value: 'name',
           },
-          { text: 'Calories', value: 'calories' },
-          { text: 'Fat (g)', value: 'fat' },
-          { text: 'Carbs (g)', value: 'carbs' },
-          { text: 'Protein (g)', value: 'protein' },
-          { text: 'Iron (%)', value: 'iron' },
+          { text: 'Location', value: 'calories' },
+          { text: 'Compensation', value: 'carbs' },
+          { text: 'User', value: 'protein' },
+          { text: 'Score', value: 'iron' },
         ],
         desserts: [
           {
-            name: 'Frozen Yogurt',
-            calories: 159,
-            fat: 6.0,
-            carbs: 24,
-            protein: 4.0,
-            iron: '1%',
+            name: 'บริษัทฮา ไม่จำกัด',
+            calories: 'กรุงเทพฯ',
+            carbs: 'ได้',
+            protein: 'Methee Heephong',
+            iron: '99.9',
           },
           {
-            name: 'Ice cream sandwich',
-            calories: 237,
-            fat: 9.0,
-            carbs: 37,
-            protein: 4.3,
-            iron: '1%',
+            name: 'บริษัทกำจัดขน',
+            calories: 'ขอนแก่น',
+            carbs: 'ไม่ได้',
+            protein: 'มั่ง บางบัว',
+            iron: '100',
           },
           
         ],
